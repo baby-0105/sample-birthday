@@ -22,12 +22,10 @@
 }
 
 .middle-right{
-  height: 250px;
-  width: 250px;
   float: left;
 }
 
-.clearfix::after{ 
+.clearfix::after{
   content: '';
   display: block;
   clear: both;
