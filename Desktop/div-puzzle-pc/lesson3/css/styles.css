@@ -48,11 +48,14 @@
   width: 250px;
   background-color: #8c2727;
   float: left;
+  position: relative;
 }
 
 .m-right-container{
   list-style: none;
-  margin: 40px 60px 40px 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
 }
 
 .m-right-item{
