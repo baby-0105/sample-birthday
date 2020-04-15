@@ -54,11 +54,12 @@ header{
   width: 130px;
   height: 130px;
   border-radius: 10px;
+  margin-right: 30px;
 }
 
 .main-item-right{
   background-color: #fff;
-  width: 580px;
+  flex: 1;
   height: 260px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px #AAAAAA;
