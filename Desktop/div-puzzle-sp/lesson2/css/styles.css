@@ -4,10 +4,10 @@
 }
 
 header{
-  background-color:#FF8C00;
+  background-color:#ff8c00;
   height: 80px;
   position:relative;
-  box-shadow: 0px 4px 4px #AAAAAA;
+  box-shadow: 0px 4px 4px #aaaaaa;
 }
 
 .h-container{
@@ -51,6 +51,8 @@ header{
   padding: 50px 50px 50px 30px;
   display: flex;
   flex-wrap: wrap;
+  width: 50%; 
+  margin: 0 auto; 
 }
 
 .main-item{
@@ -59,10 +61,10 @@ header{
   height: 200px;
   border-radius: 10px;
   margin: 15px;
-  box-shadow: 2px 2px 4px #AAAAAA;
+  box-shadow: 2px 2px 4px #aaaaaa;
 }
 
 footer{
-  background-color: #4B0082;
+  background-color: #4b0082;
   height: 80px;
 }
