@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  width: 100%;
+}
+
+header{
+  background-color: #eeeeee;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+}
+
+.h-container{
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-img{
+  width: 80px;
+  height: 80px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.h-container li{
+  list-style: none;
+  font-size: 25px;
+  margin-left: 15px;
+}
+
+.h-container li:first-child{
+  margin-left: 0; 
+}
+
+.h-container ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+main{
+  margin: 50px 0;
+}
+
+main h2{
+  text-align: center;
+  font-size: 40px;
+  color: #666666;
+}
+
+.works h3,
+.introduction h3{
+  color: #666666;
+  font-size: 30px;
+  padding-left: 10px;
+  border-left: 10px solid #ff77ff;
+}
+
+.m-container{
+  margin: 50px 20px 0 20px;
+  display: flex; 
+}
+
+.introduction{
+  margin-left: 50px;
+  width: 500px;
+}
+
+.work{
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work img{
+  width: 250px;
+  margin-top: 20px;
+}
+
+.introduction p{
+  margin-top: 20px;
+}
+
+footer{
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-box{
+  padding: 10px;
+  background-color: skyblue;
+  display: inline-block;
+}
+
+footer p{
+  background-color: skyblue;
+  display: inline-block;
+  padding: 20px 50px;
+  color: white;
+  border: 3px solid white;
+  font-size: 20px;
+}
