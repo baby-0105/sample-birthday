@@ -184,6 +184,10 @@ p,h2,h3{
 
 /*Blog*/
 
+li{
+  list-style: none;
+}
+
 .blog-top h2, 
 .blog-top p{
   text-align: center;
@@ -201,14 +205,10 @@ p,h2,h3{
   width: 40%;
 }
 
-.blog-content-reverse{
+.blog-content:nth-child(even){
   display: flex;
   flex-direction: row-reverse;
   margin: 60px 0;
-}
-
-.blog-content-reverse img{
-  width: 40%;
 }
 
 .blog h3{
@@ -219,8 +219,12 @@ p,h2,h3{
   font-size: 25px;
 }
 
-.blog-content-right{
-  margin-left: 30px;
+.blog-content img{
+  margin-right: 30px;
+}
+
+.blog-content img:nth-child(even){
+  margin-right: 0px;
 }
 
 .blog a{
@@ -229,6 +233,12 @@ p,h2,h3{
   border-radius: 10px;
   margin-top: 50px;
   display: inline-block;
+}
+
+.blog a:hover{
+  cursor: pointer;
+  background-color: black;
+  transition: 0.5s; 
 }
 
 /*レスポンシブ*/
@@ -301,13 +311,11 @@ p,h2,h3{
 
   /*blog*/
 
-  .blog-content,
-  .blog-content-reverse{
+  .blog-content{
     display: block;
   }
 
-  .blog-content img,
-  .blog-content-reverse img {
+  .blog-content img{
     width: 100%;
   }
 
