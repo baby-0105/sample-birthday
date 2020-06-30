@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= title %>about | 02-ejs</title>
+    <link rel="stylesheet" href="../../tools/style/reset.css" />
+    <link rel="stylesheet" href="<%= path %>/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="info">
+        <h1 class="title"><%= Title %></h1>
+        <a href='<%= a_path %>'><%= word %> page</a>
+      </div>
+      <header class="header"></header>
+      <main class="main">
+        <div class="middle__left"><% include _ul_li %></div>
+        <div class="middle__right"></div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>

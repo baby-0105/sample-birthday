@@ -1,0 +1,15 @@
+.l-index{
+  background-image: url(../../img/about_back.jpeg);
+  background-size: 50vw 100vh;
+  animation: bgscroll 20s linear infinite;
+}
+
+@-webkit-keyframes bgscroll {
+  0% {background-position: 0 0;}
+  100% {background-position: 50vw 0;}
+ }
+
+ @keyframes bgscroll {
+  0% {background-position: 0 0;}
+  100% {background-position: 50vw 0;}
+ }
