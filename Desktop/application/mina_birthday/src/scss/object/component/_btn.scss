@@ -1,4 +1,4 @@
-.p-index-feature__btn{
+.c-letterBtn{
   border: solid 1px $colorGray;
   background: $colorWhite;
   color: $colorGray;
@@ -9,26 +9,19 @@
   margin: 0 auto;
   width: 200px;
   height: 50px;
-  font-size: 20px;
-  margin-top:30px;
+  font-size: 2rem;
   position: relative;
+  top: 200px;
 
   &:hover{
     background: $colorBlack;
     border: solid 1px $colorWhite;
     color: $colorWhite;
-
-    //&.p-index-feature__btn--text:before{
-      //border-bottom: solid 1px $colorWhite;
-    //}
-
-    //&.p-index-feature__btn--text:after{
-      //border-bottom: solid 1px $colorWhite;
-    //}
+    transition: 0.5s;
   }
 }
 
-.p-index-feature__btn--text{
+.c-letterBtn__text{
   position: relative;
 
   &:before{
@@ -59,10 +52,48 @@
   }
 }
 
-.p-index-feature__btn--heart{
+.c-letterBtn__heart{
   position: absolute;
   width: 20px;
   height: 20px;
   top: 20px;
   color: $colorHeartred;
+}
+
+/*// -----------------------------------------------------------------
+// タブレット
+// -----------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+  .c-letterBtn{
+    top: 280px;
+    width: 270px;
+    height: 70px;
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .c-letterBtn{
+    top: 230px;
+  }
+}
+
+/*// -----------------------------------------------------------------
+// スマホ
+// -----------------------------------------------------------------*/
+
+@media screen and (max-width: 640px) {
+  .c-letterBtn{
+    top: 180px;
+    width: 200px;
+    height: 50px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .c-letterBtn{
+    top: 150px;
+  }
 }

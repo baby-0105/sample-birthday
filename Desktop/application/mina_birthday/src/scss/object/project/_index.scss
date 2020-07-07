@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.p-index-video{
+.p-indexVideo{
   height: 100vh;
   margin: 0 auto;
   display: block;
@@ -17,17 +17,35 @@
   position: absolute;
 }
 
-.p-index-heart-video{
-  display: none;
-}
-
-.p-index-feature__title{
+.p-index-featureTitle{
+  display: flex;
   text-align: center;
-  font-size: 150px;
-  color: $colorLight;
 }
 
-.p-index-feature__text{
-  font-size: 50px;
-  color: $colorLight;
+/*// -----------------------------------------------------------------
+// タブレット
+// -----------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+  .p-indexVideo{
+    height: 100%;
+    width: 100vw;
+  }
+
+  .p-index-featureTitle{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 959px) {
+}
+
+/*// -----------------------------------------------------------------
+// スマホ
+// -----------------------------------------------------------------*/
+
+@media screen and (max-width: 640px) {
+}
+
+@media screen and (max-width: 320px) {
 }
