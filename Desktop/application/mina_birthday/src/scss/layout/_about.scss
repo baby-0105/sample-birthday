@@ -1,5 +1,5 @@
 .l-about-main{
-  background-image: url(../../img/about_back.jpeg);
+  background-image: url("#{$bgPath}about_back.jpeg");
   background-size: 70%;
   background-attachment: fixed;
   background-position: 170% 50%;
