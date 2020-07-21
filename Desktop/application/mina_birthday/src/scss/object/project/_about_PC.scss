@@ -1,16 +1,11 @@
-.l-about{
-  background-image: url("#{$bgPath}about_back.jpeg");
-  background-size: 70%;
-  background-attachment: fixed;
-  background-position: 170% 50%;
-}
-
 /*// -----------------------------------------------------------------
 // タブレット
 // -----------------------------------------------------------------*/
 
 @media screen and (max-width: 1024px) {
-  .l-about{
-    background-size: 100%;
-  }
+
+}
+
+@media screen and (max-width: 959px) {
+
 }

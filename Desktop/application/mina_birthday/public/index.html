@@ -22,27 +22,67 @@
 <meta name="twitter:description" content="Mina Birthday Top" />
 <meta name="twitter:image" content="" /><!--絶対パスで記述-->
 
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"> <!-- fontawesome読み込み -->
 
 <title>Mina Birthday Top</title>
 
 <script type="text/javascript" src="../../js/pages/index.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<link href="assets/stylesheets/bundle35a1d64c33963c9481cd.css" rel="stylesheet"></head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jQuely読み込み -->
+<link href="assets/stylesheets/bundleab90781693e81cb1284d.css" rel="stylesheet"></head>
 <body>
-<div class="l-wrap">
+
 
 
 <main class = "l-index">
   <div class = "p-index">
-    <video class = "p-index-video" id = "sleepy" src="video/namake.mov" loop autoplay muted></video>
+    <video class = "p-indexVideo" id = "sleepy" src="/assets/images/video/mina_heart.mov" loop autoplay muted></video>
     <div class = "p-index-feature">
-      <h1 class = "p-index-feature__title">Happy Birthday!</h1>
-      <h1 class = "p-index-feature__title">Mina!</h1>
-      <p class = "p-index-feature__text">〜良き１年となりますように〜</p>
-      <a href="/about"  class = "p-index-feature__btn">
-        <i class="fas fa-heart p-index-feature__btn--heart"></i>
-        <p class = "p-index-feature__btn--text">手紙を見る</p>
+      <div class = "p-index-featureTitle">
+        <h1 class = "c-featureTitle c-featureTitle__happy">
+          
+          
+          
+            <span class = "c-happyPart c-featureTitle__happy--red">H</span>
+          
+            <span class = "c-happyPart c-featureTitle__happy--orange">A</span>
+          
+            <span class = "c-happyPart c-featureTitle__happy--green">P</span>
+          
+            <span class = "c-happyPart c-featureTitle__happy--lightblue">P</span>
+          
+            <span class = "c-happyPart c-featureTitle__happy--deepblue">Y</span>
+          
+        </h1>
+        <h1 class = "c-featureTitle c-featureTitle__birthday">
+          
+          
+          
+            <span class = "c-birthdayPart c-featureTitle__birthday--purple">B</span>
+          
+            <span class = "c-birthdayPart c-featureTitle__birthday--pink">I</span>
+          
+            <span class = "c-birthdayPart c-featureTitle__birthday--blue">R</span>
+          
+            <span class = "c-birthdayPart c-featureTitle__birthday--yellowgreen">T</span>
+          
+            <span class = "c-birthdayPart c-featureTitle__birthday--gray">H</span>
+          
+            <span class = "c-birthdayPart c-featureTitle__birthday--brown">D</span>
+          
+            <span class = "c-birthdayPart c-featureTitle__birthday--redpurple">A</span>
+          
+            <span class = "c-birthdayPart c-featureTitle__birthday--green">Y</span>
+          
+        </h1>
+        <span class = "c-featureName c-featureName__anim--1">Mina!</span>
+        <span class = "c-featureName c-featureName__anim--2">Mina!</span>
+        <span class = "c-featureName c-featureName__anim--3">Mina!</span>
+        <span class = "c-featureName c-featureName__anim--4">Mina!</span>
+      </div>
+      <p class = "c-featureText">〜良き１年となりますように〜</p>
+      <a href="/about" class = "c-letterBtn">
+        <i class="fas fa-heart c-letterBtn__heart"></i>
+        <p class = "c-letterBtn__text">手紙を見る</p>
       </a>
     </div>
   </div>
@@ -52,6 +92,27 @@
 
 </footer>
 
-</div><!-- l-wrap -->
-<script type="text/javascript" src="assets/javascripts/bundle35a1d64c33963c9481cd.js"></script></body>
+<script type="text/javascript" src="assets/javascripts/bundleab90781693e81cb1284d.js"></script></body>
 </html>
+
+<script>
+  $(document).ready(function(){
+
+    $(".c-featureTitle").css({opacity:'0'});
+    $(".c-featureText").css({opacity:'0'});
+    $(".c-letterBtn").css({opacity:'0'});
+
+    // 100/1000秒のスピードで、2秒後に、opacity 0 → opacity 1　へ。
+    setTimeout(function(){
+      $(".c-featureTitle").stop().animate({opacity:'1'},100);
+    },2000);
+
+      setTimeout(function(){
+      $(".c-featureText").stop().animate({opacity:'1'},3000);
+    },2000);
+
+      setTimeout(function(){
+      $(".c-letterBtn").stop().animate({opacity:'1'},3000);
+    },2000);
+  });
+</script>

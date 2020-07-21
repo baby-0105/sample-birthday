@@ -19,6 +19,17 @@ body, html{
   font-family: 'Savoye LET','Brush Script MT','Hannotate TC','ヒラギノ角ゴシック','Hiragino Sans',sans-serif;
 }
 
+.SP_only{
+  display: none;
+}
+
+
+@media screen and (max-width: 640px) {
+  .responsive_only{
+    display: block;
+  }
+}
+
 // デバッグ用
 // body * {
 //   outline: 1px dotted rgba(255,0,0,0.2) !important;

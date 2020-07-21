@@ -223,7 +223,7 @@
 .c-featureText{
   text-align: center;
   font-size: 5rem;
-  color: $colorBlack;
+  color: $colorWhite;
   position: relative;
   top: 150px;
 }
@@ -339,7 +339,7 @@
 
 @media screen and (max-width: 640px) {
   .c-featureTitle{
-    font-size: 5rem;
+    font-size: 6.4rem;
     bottom: 150px;
   }
 
@@ -355,12 +355,12 @@
 
 @media screen and (max-width: 320px) {
   .c-featureTitle{
-    font-size: 4rem;
+    font-size: 5rem;
     bottom: 120px;
   }
 
   .c-featureName{
-    font-size: 6rem;
+    font-size: 7rem;
   }
 
   .c-featureText{

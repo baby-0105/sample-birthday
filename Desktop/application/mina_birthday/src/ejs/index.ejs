@@ -1,7 +1,6 @@
 <% var title = "Mina Birthday Top"; var description = "Mina Birthday Top"; %> <% include
 src/ejs/template/_head %>
-<% var img_path = '/assets/images/' %>
-<% var video_path = '/assets/video/' %>
+<% var video_path = '/assets/images/video/' %>
 
 <main class = "l-index">
   <div class = "p-index">
@@ -36,6 +35,8 @@ src/ejs/template/_head %>
   </div>
 </main>
 
+<% include src/ejs/template/_footer %>
+
 <script>
   $(document).ready(function(){
 
@@ -57,5 +58,3 @@ src/ejs/template/_head %>
     },2000);
   });
 </script>
-
-<% include src/ejs/template/_footer %>

@@ -133,7 +133,8 @@ module.exports = (env, argv) => {
     },
     devServer: {
       compress: true,
-      port: 9000,
+      contentBase: path.resolve(__dirname, 'public'), //publicディレクトリをサーバーの起点とする。
+      port: 8080,
       open: true
     },
   }
