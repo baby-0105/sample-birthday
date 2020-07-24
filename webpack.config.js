@@ -139,3 +139,10 @@ module.exports = (env, argv) => {
     },
   }
 }
+
+// netlify デプロイ用
+export default {
+  generate: {
+    fallback: true
+  }
+}
