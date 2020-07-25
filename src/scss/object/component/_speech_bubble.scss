@@ -426,6 +426,20 @@
 }
 
 @media screen and (max-width: 375px) {
+  .c-speech-bubble__text--1{
+    &:before{
+      left: -20px;
+    }
+
+    &:after{
+      left: -30px;
+    }
+  }
+
+  .c-speech-bubble__text--2{
+    width: 45%;
+  }
+
   .c-speech-bubble__text--3 {
     top: 38%;
     width: 45%;
