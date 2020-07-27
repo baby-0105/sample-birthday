@@ -42,19 +42,23 @@
 
   opacity : 0;
   transition : all 1.0s;
+  //transition : -webkit-transform 1.0s;
 }
 
 .p-about-feature-img__woman{
   transform : translate(-135px, 400px); /* translate(X方向の距離, Y方向の距離) */
+  -webkit-transform : translate(-135px, 400px);
 }
 
 .p-about-feature-img__man{
   transform : translate(135px, 400px); /* translate(X方向の距離, Y方向の距離) */
+  -webkit-transform : translate(135px, 400px);
 }
 
 .visible1{
   opacity : 1;
   transform : translate(0, 0);
+  -webkit-transform : translate(0, 0);
 }
 
   /*// -----------------------------------------------------------------
@@ -77,11 +81,13 @@
 
     .p-about-feature-img__woman{
       transform : translate(0, 0); /* translate(X方向の距離, Y方向の距離) */
+      -webkit-transform : translate(0, 0);
       right: 50px;
     }
 
     .p-about-feature-img__man{
       transform : translate(0, 0); /* translate(X方向の距離, Y方向の距離) */
+      -webkit-transform : translate(0, 0);
       left: 50px;
     }
   }
@@ -107,7 +113,6 @@
     .p-about-feature-img__woman{
       top: 20px;
       right: 20px;
-      z-index: 2;
     }
 
     .p-about-feature-img__man{
@@ -122,37 +127,27 @@
   }
 
 /*// -----------------------------------------------------------------
+// p-about-bgSticky
+// -----------------------------------------------------------------*/
+
+.p-about-bgSticky{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: -1; //これ消したらiOS画面割れなくなる。しかし、見えなくなる要素が増える
+  width: 100%;
+  height: 100vh;
+  background: url("#{$bgPath}bgsticky/bgsticky01.png") center no-repeat;
+  background-size: cover;
+}
+
+/*// -----------------------------------------------------------------
 // p-about-letter
 // -----------------------------------------------------------------*/
 
 .p-about-letter{
-  margin-top: 300px;
+  //margin-top: 300px;
 }
-
-  /*// -----------------------------------------------------------------
-  // タブレット
-  // -----------------------------------------------------------------*/
-
-  @media screen and (max-width: 1024px) {
-
-  }
-
-  @media screen and (max-width: 959px) {
-
-  }
-
-  /*// -----------------------------------------------------------------
-  // スマホ
-  // ----------------------------------------------------------------*/
-
-  @media screen and (max-width: 640px) {
-
-  }
-
-
-  @media screen and (max-width: 320px) {
-
-  }
 
 /*// -----------------------------------------------------------------
 // p-about-letter__section [block]
@@ -161,24 +156,15 @@
 .p-about-letter__section{
   margin: 0 auto;
   width: 100%;
+
+  -webkit-perspective: 1000px; //奥行きの設定（iOS用）
+  perspective: 1000px; //奥行きの設定（iOS用）
 }
 
 .p-about-letter__section--reverse{
   display: flex;
   flex-direction: row-reverse;
 }
-
-  /*// -----------------------------------------------------------------
-  // タブレット
-  // -----------------------------------------------------------------*/
-
-  @media screen and (max-width: 1024px) {
-
-  }
-
-  @media screen and (max-width: 959px) {
-
-  }
 
   /*// -----------------------------------------------------------------
   // スマホ
@@ -194,11 +180,6 @@
     }
   }
 
-
-  @media screen and (max-width: 320px) {
-
-  }
-
 /*// -----------------------------------------------------------------
 // p-about-letter__pic [block]
 // -----------------------------------------------------------------*/
@@ -211,11 +192,11 @@
   height: 50%;
   background-position: center center;
   background-size: cover;
-  //transform: scale(0.2, 0.2);
   opacity: 0;
-  transition: all 0.5s ease 0s;
+  transition: all 0.2s ease 0s;
   border-radius: 30px;
   transform: rotateY(90deg);
+  -webkit-transform: rotateY(90deg); //iOS用
   box-shadow: 2px 3px 8px 3px $colorBlack;
 }
 
@@ -226,6 +207,7 @@
 .show .p-about-letter__pic{
   opacity: 1;
   transform: rotateY(0deg);
+  -webkit-transform: rotateY(0deg); //iOS用
 }
 
   /*// -----------------------------------------------------------------
@@ -285,12 +267,14 @@
 
   opacity : 0;
   transform : translate(0, 100px); /* translate(X方向の距離, Y方向の距離) */
+  -webkit-transform : translate(0, 100px);
   transition : all 0.5s;
 }
 
 .visible2{
   opacity : 1;
   transform : translate(0, 0);
+  -webkit-transform : translate(0, 0);
 }
 
 .p-about-letter__word--left{
@@ -377,6 +361,11 @@
   opacity: 1;
 }
 
+.p-about-letter-bgwhite{
+  overflow: scroll; //スクロール時の動きを滑らかに（iOS）
+  -webkit-overflow-scrolling: touch //スクロール時の動きを滑らかに（iOS）
+}
+
   /*// -----------------------------------------------------------------
   // タブレット
   // -----------------------------------------------------------------*/
@@ -389,6 +378,7 @@
     .p-about-letter__sticky{
       top: 50%;
       transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
     }
 
     .p-about-letter__whitePic{
@@ -469,6 +459,7 @@
     width: 150px;
     height: 150px;
     transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
   }
 }
 

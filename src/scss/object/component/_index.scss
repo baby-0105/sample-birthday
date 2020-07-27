@@ -3,6 +3,8 @@
   animation: 2s explode_title infinite;
   transform: translate3d(0,0,0);
   opacity: 0;
+  position: relative;
+  top: -100px;
 }
 
 /*// -----------------------------------------------------------------
@@ -236,7 +238,7 @@
   .c-featureTitle{
     font-size: 14rem;
     position: relative;
-    bottom: 250px;
+    top: -250px;
   }
 
   .c-featureTitle__happy {
@@ -245,7 +247,7 @@
 
   .c-featureName{
     font-size: 20rem;
-    top: -180px;
+    top: -50px;
   }
 
   .c-featureText{
@@ -287,13 +289,13 @@
 
 @media screen and (max-width: 959px) {
   .c-featureTitle{
-    font-size: 12rem;
-    bottom: 170px;
+    font-size: 11rem;
+    top: -200px;
   }
 
   .c-featureName{
     font-size: 16rem;
-    top: -90px;
+    top: 0;
   }
 
   .c-featureText{
@@ -339,12 +341,13 @@
 
 @media screen and (max-width: 640px) {
   .c-featureTitle{
-    font-size: 6.4rem;
-    bottom: 150px;
+    font-size: 5.5rem;
+    top: -160px;
   }
 
   .c-featureName{
     font-size: 8rem;
+    top: -80px;
   }
 
   .c-featureText{
@@ -355,8 +358,8 @@
 
 @media screen and (max-width: 320px) {
   .c-featureTitle{
-    font-size: 5rem;
-    bottom: 120px;
+    font-size: 4rem;
+    top: -130px;
   }
 
   .c-featureName{
