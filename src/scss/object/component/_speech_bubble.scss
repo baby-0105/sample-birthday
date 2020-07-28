@@ -458,9 +458,9 @@
 @media screen and (max-width: 320px) {
   .c-speech-bubble__text--1{
     top: 200px;
-    right: 5px;
+    right: 20px;
     height: 80px;
-    width: 50%;
+    width: 45%;
 
     &::before{
       left: -20px;
@@ -503,7 +503,7 @@
 
   .c-speech-bubble__text--4 {
     height: 50px;
-    width: 50%;
+    width: 40%;
 
     &:before {
       bottom: 40px;
