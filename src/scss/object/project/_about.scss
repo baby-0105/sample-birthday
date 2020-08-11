@@ -14,7 +14,7 @@
   font-size: $fontTitle;
 }
 
-.p-about-title-text{
+.p-about-title__text{
   border-right: .1em solid $colorWhite;
 	width: 4.5ch; //日本語用
 	margin: 2em 1em;
@@ -35,18 +35,18 @@
   }
 
 /*// -----------------------------------------------------------------
-// p-about-feature-img
+// p-about-featureImg
 // -----------------------------------------------------------------*/
 
-.p-about-feature-img{
+.p-about-featureImg{
   display: flex;
   align-items: center;
   height: 100vh;
   background: rgba(0,0,0,0.5);
 }
 
-.p-about-feature-img__woman,
-.p-about-feature-img__man{
+.p-about-featureImg__woman,
+.p-about-featureImg__man{
   width: 450px;
   height: 80%;
   margin: 0 auto;
@@ -59,12 +59,12 @@
   //transition : -webkit-transform 1.0s;
 }
 
-.p-about-feature-img__woman{
+.p-about-featureImg__woman{
   transform : translate(-135px, 400px); /* translate(X方向の距離, Y方向の距離) */
   -webkit-transform : translate(-135px, 400px);
 }
 
-.p-about-feature-img__man{
+.p-about-featureImg__man{
   transform : translate(135px, 400px); /* translate(X方向の距離, Y方向の距離) */
   -webkit-transform : translate(135px, 400px);
 }
@@ -80,26 +80,26 @@
   // -----------------------------------------------------------------*/
 
   @media screen and (max-width: 1024px) {
-    .p-about-feature-img{
+    .p-about-featureImg{
       display: block;
       position: relative;
     }
 
-    .p-about-feature-img__woman,
-    .p-about-feature-img__man{
+    .p-about-featureImg__woman,
+    .p-about-featureImg__man{
       position: absolute;
       width: 400px;
       height: 50%;
       top: 25%;
     }
 
-    .p-about-feature-img__woman{
+    .p-about-featureImg__woman{
       transform : translate(0, 0); /* translate(X方向の距離, Y方向の距離) */
       -webkit-transform : translate(0, 0);
       right: 50px;
     }
 
-    .p-about-feature-img__man{
+    .p-about-featureImg__man{
       transform : translate(0, 0); /* translate(X方向の距離, Y方向の距離) */
       -webkit-transform : translate(0, 0);
       left: 50px;
@@ -107,8 +107,8 @@
   }
 
   @media screen and (max-width: 959px) {
-    .p-about-feature-img__woman,
-    .p-about-feature-img__man{
+    .p-about-featureImg__woman,
+    .p-about-featureImg__man{
       width: 300px;
     }
   }
@@ -118,18 +118,18 @@
   // ----------------------------------------------------------------*/
 
   @media screen and (max-width: 640px) {
-    .p-about-feature-img__woman,
-    .p-about-feature-img__man{
+    .p-about-featureImg__woman,
+    .p-about-featureImg__man{
       width: 200px;
       height: 50%;
     }
 
-    .p-about-feature-img__woman{
+    .p-about-featureImg__woman{
       top: 20px;
       right: 20px;
     }
 
-    .p-about-feature-img__man{
+    .p-about-featureImg__man{
       left: 20px;
       top: 47%;
     }
@@ -150,53 +150,53 @@
 }
 
 .p-about-bgSticky1{
-  background: url("#{$bgPath}bgsticky/bgsticky01.png") center no-repeat;
+  background: url("#{$bgPath}bgsticky/bgsticky01.jpeg") center no-repeat;
   background-size: cover;
   background-position: 50% 57%;
 }
 
 .p-about-bgSticky2{
-  background: url("#{$bgPath}bgsticky/bgsticky02.png") center no-repeat;
+  background: url("#{$bgPath}bgsticky/bgsticky02.jpeg") center no-repeat;
   background-size: cover;
   background-position: 50% 85%;
 }
 
 .p-about-bgSticky3{
-  background: url("#{$bgPath}bgsticky/bgsticky03.png") center no-repeat;
+  background: url("#{$bgPath}bgsticky/bgsticky01.jpeg") center no-repeat;
   background-size: cover;
   background-position: 0% bottom;
 }
 
 .p-about-bgSticky4{
-  background: url("#{$bgPath}bgsticky/bgsticky04.png") center no-repeat;
+  background: url("#{$bgPath}bgsticky/bgsticky02.png") center no-repeat;
   background-size: cover;
 }
 
 .p-about-bgSticky5{
-  background: url("#{$bgPath}bgsticky/bgsticky05.png") center no-repeat;
+  background: url("#{$bgPath}bgsticky/bgsticky01.jpeg") center no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
 .p-about-bgSticky6{
-  background: url("#{$bgPath}bgsticky/bgsticky06.png") center no-repeat;
+  background: url("#{$bgPath}bgsticky/bgsticky02.png") center no-repeat;
   background-size: cover;
   background-position: 50% 10%;
 }
 
 .p-about-bgSticky7{
-  background: url("#{$bgPath}bgsticky/bgsticky07.png") center no-repeat;
+  background: url("#{$bgPath}bgsticky/bgsticky01.jpeg") center no-repeat;
   background-size: cover;
 }
 
 .p-about-bgSticky8{
-  background: url("#{$bgPath}bgsticky/bgsticky08.png") center no-repeat;
+  background: url("#{$bgPath}bgsticky/bgsticky02.png") center no-repeat;
   background-size: cover;
   background-position: 50% 40%;
 }
 
 .p-about-bgSticky9{
-  background: url("#{$bgPath}bgsticky/bgsticky09.png") center no-repeat;
+  background: url("#{$bgPath}bgsticky/bgsticky01.jpeg") center no-repeat;
   background-size: cover;
 }
 
@@ -207,9 +207,6 @@
 .p-about-letter__section{
   margin: 0 auto;
   width: 100%;
-
-  //-webkit-perspective: 1000px; //奥行きの設定（iOS用）
-  //perspective: 1000px; //奥行きの設定（iOS用）
 }
 
 .p-about-letter__section--reverse{
@@ -241,7 +238,7 @@
   right: 100px;
   width: 50%;
   height: 50%;
-  background-image: url("#{$bgPath}section/section33.jpeg");
+  background-image: url("#{$bgPath}section33.jpeg");
   background-position: center center;
   background-size: cover;
   opacity: 0;
